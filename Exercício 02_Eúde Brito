@@ -32,5 +32,6 @@ programa
 		escreva("-----------------RESULTADO---------------------------\n\n")
 		escreva(nome,", você tem ",idade, " anos de idade\n\n")
 		escreva("-------Calcula Idade v1.0 por Eúde Brito-------------\n\n")
+	
 	}
 }
