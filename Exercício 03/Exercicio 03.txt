@@ -1,0 +1,17 @@
+1//biblioteca incluida para utilização da função "arredondar"
+
+2//declara uma variavel para receber o nome do aluno
+
+3//declara as variaveis que receberao as notas e a media do aluno
+
+4//recebe o nome do aluno
+
+5//recebe a primeira nota
+
+6//recebe a segunda nota
+
+7//recebe a terceira nota
+
+8//arredonda um número para que não possua mais de uma casa decimal apos a vírgula
+
+9//calcua a media das notas e imprime na tela o resultado
