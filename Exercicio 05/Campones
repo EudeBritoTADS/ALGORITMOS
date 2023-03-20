@@ -1,0 +1,65 @@
+programa
+{
+	caracter confirm, campones
+	inteiro op=1,ladoB[4]
+	cadeia item[4]
+	
+	funcao inicio()
+	{
+		item[1]="(1 - o lobo)"
+		item[2]=" (2 - a ovelha)"
+		item[3]=" (3 - a couve)"
+		item[0]=""
+		escreva("Olá! Vamos resolver um problema de lógica, vou lhe passar a situação...")
+		escreva("\n\nUm camponês precisa atravessar um riacho, de um lado (A) para o outro (B), e ele deve levar: Uma ovelha, um lobo e um maço de couve")
+		escreva("\n\nAí está o problema: Ele so pode levar um de cada vez. Portanto, Se ele deixar o lobo junto com a ovelha, ela vira banquete")
+		escreva("\n\nE se ele deixar a ovelha unto com o maço de couve, ja era!")
+		escreva(" Está preparado? digite (s) para Sim: ")
+		leia(confirm)
+		se(confirm!='s')
+		escreva("\nEstá bem, você digitou (não) ou um caracter errado, então Programa encerrado!\n")
+
+		
+		senao{
+			limpa()		
+		escreva("Agora voce é o camponês e está com o lobo(1), a ovelha(2) e a couve(3) no lado (A)\n\n")	
+			
+		enquanto(op>=0 e op<=3){
+		escreva("Digite o número correspondente ao item que você quer passar para o lado (B): ")
+		leia (op)
+		ladoB[op]=op
+		campones='b'
+		se(ladoB[1]!=0 e ladoB[2]==0 e ladoB[3]==0 e campones=='b'){//ovelha com a couve bo lado A
+			limpa()
+		escreva("Que pena!, voce deixou a ovelha sozinha com a couve e ela comeu. Tente novamente!\n")
+			pare}		
+		
+		se(ladoB[1]==0 e ladoB[2]==0 e ladoB[3]!=0 e campones=='b'){//ovelha e lobo no lado A
+			limpa()
+		escreva("Que pena!, voce deixou a ovelha sozinha com o lobo e ele a devorou. Tente novamente!\n")
+			pare}
+		se(ladoB[1]!=0 e ladoB[2]!=0 e ladoB[3]!=0 e campones=='b'){//parabéns
+		escreva("Meus Parabéns, você conseguiu!!!")
+			pare}
+
+		
+		escreva("\nNo lado B:",item[ladoB[1]],item[ladoB[2]],item[ladoB[3]],"\n")
+		escreva("\nDigite o número correspondente ao que você deseja trazer para o lado A ou (0) se retorna sozinho: ")
+		leia(op)
+		ladoB[op]=0
+		campones='a'
+		se(ladoB[1]!=0 e ladoB[2]!=0 e ladoB[3]==0 e campones=='a'){//ovelha com o lobo o lado B
+			limpa()
+		escreva("Que pena!, voce deixou a ovelha sozinha com o lobo e ele a devorou. Tente novamente!\n")
+		     pare}
+			
+		se(ladoB[1]==0 e ladoB[2]!=0 e ladoB[3]!=0 e campones=='a'){//ovelha e couve no lado B
+			limpa() 
+		escreva("Que pena!, voce deixou a ovelha sozinha com a couve e ela almoçou. Tente novamente!\n")
+			pare}
+			limpa()
+escreva("Agora no lado A nós temos:", item[1-ladoB[1]],item[2-ladoB[2]],item[3-ladoB[3]], "\n\n")
+		}	
+		}
+	}
+}
