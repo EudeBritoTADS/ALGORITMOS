@@ -1,0 +1,7 @@
+//declaramos uma variavel do tipo inteiro que armazenará o numero a ser digitado
+
+//"%" == função que solicita a inclusão do numero pelo0 usuario
+
+//nesta seção a função "se" é obtido o resto da divisão por 2 do numero para saber se eleretorna o valor zero, para  ser um numero par
+
+//caso não retorne zero, o valor digitado é ímpar
