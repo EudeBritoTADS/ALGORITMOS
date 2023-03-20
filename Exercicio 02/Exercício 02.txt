@@ -1,0 +1,17 @@
+ALGORITMO DE CALCULAR IDADE EXATA
+
+1 - Inicia com 5 variáveis, sendo 4 inteiras (dia, mes, ano, idade) e 01 cadeia de caracter (nome);
+
+2 - Inclui a biblioteca "Calendário" para extrair dados de data atuais
+
+3 - Faz a leitura de todas as variáveis
+
+4 - Estabelece condições para obter o resultado da idade
+
+5 - Se o mês informado for menor que o atual, significa que o usuário ainda não completou a idade
+referente a esse ano (se mes<atual então o resultado é a idade atual -1)
+
+6 - Se o mês informado for igual ao atual, então a condição é desviada para o dia (Se o dia
+informado for anteior a "hoje" então o usuário ainda não completou a idade referente ao ano atual)
+
+7 - por fim, se o mês informado for maior que o atual, significa que o usuário ja completou a idade de referência
