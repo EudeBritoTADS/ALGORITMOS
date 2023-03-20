@@ -8,7 +8,7 @@ programa
 		leia(numero) //função que solicita a inclusão do numero pelo0 usuario
 		se(numero % 2 == 0){ 
 		escreva("\nO Numero ") escreva(numero) escreva(" é par\n")
-		}//nesta seção a função "se" xxx o numero para saber se ele, quando divisível por 2, retorna o valor zero, para  ser um numero par
+		}//nesta seção a função "se" é obtido o resto da divisão por 2 do numero para saber se eleretorna o valor zero, para  ser um numero par
 		senao {
 			escreva("\nO Numero ") escreva(numero) escreva(" é impar\n")//caso não retorne zero, o valor digitado é ímpar
 		}
