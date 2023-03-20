@@ -1,0 +1,20 @@
+programa
+{
+	inclua biblioteca Matematica//biblioteca incluida para utilização da função "arredondar = 1 número depois da vírgula"
+	funcao inicio()
+	{
+		cadeia nome//declara uma variavel para receber o nome do aluno
+		real n1,n2,n3,media//declara as variaveis que receberao as notas e a media do aluno
+		escreva("Olá!\nIremos calcular a media academica do aluno\n\nDigite o nome do aluno:")
+		leia(nome)//recebe o nome do aluno
+		escreva("\nDigite a nota dos trabalhos entregues por ",nome,":")
+		leia(n1)//recebe a primeira nota
+		escreva("\nDigite a nota da avaliação aplicada a ",nome,":")
+		leia(n2)//recebe a segunda nota
+		escreva("\nDigite a nota dos exercicios respondidos por ",nome,":")
+		leia(n3)//recebe a terceira nota
+		media =(n1+n2+n3)/3
+		media=Matematica.arredondar(media, 1)//arredonda um númerop para que não possua mais de uma casa decimal apos a vírgula
+		escreva("\nA media academica de ", nome, " é igual a ", media, "\n")//calcua a media das notas e imprime na tela o resultado
+	}
+}
