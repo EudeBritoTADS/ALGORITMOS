@@ -5,9 +5,9 @@ inclua biblioteca Matematica --> Mat//biblioteca incluida para utilização da f
 	funcao inicio()
 	{
 		cadeia nome//declara uma variavel para receber o nome 
-		real salario, hpdia, result//declara as variaveis que receberao as informações solicitadas
+		real salario, hpdia//declara as variaveis que receberao as informações solicitadas
 	
-		escreva("Olá!, sou Eúde, o assistente de Recursops Humanos da empresa. \n\nQual seu nome? ")
+		escreva("Olá!, sou Eúde, o assistente de Recursos Humanos da empresa. \n\nQual seu nome? ")
 		leia (nome)
 		limpa()
 		
@@ -16,12 +16,10 @@ inclua biblioteca Matematica --> Mat//biblioteca incluida para utilização da f
 		leia(salario)
 		escreva("\nAgora informe quantas horas você trabalha por dia: ")
 		leia(hpdia)
-
-		result = (salario/30)/hpdia
 		limpa()
 		
 		escreva("--------------------------------------RESULTADO-----------------------------------------\n\n")
-		escreva(nome,"! Com base nas suas informações, você ganha R$ ",Mat.arredondar(result, 2)," por hora trabalhada\n\n")
+		escreva(nome,"! Com base nas suas informações, você ganha R$ ",Mat.arredondar((salario/30)/hpdia, 2)," por hora trabalhada\n\n")
 		escreva("\n----------------------Hora Trabalhada v1.0 por Eúde Brito---------------------------\n")
 		}
 }
