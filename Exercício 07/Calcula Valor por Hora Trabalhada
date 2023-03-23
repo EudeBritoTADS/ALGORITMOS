@@ -10,6 +10,7 @@ inclua biblioteca Matematica --> Mat//biblioteca incluida para utilização da f
 		escreva("Olá!, sou Eúde, o assistente de Recursops Humanos da empresa. \n\nQual seu nome? ")
 		leia (nome)
 		limpa()
+		
 		escreva("Certo, ",nome,"! Nós iremos calcular o valor da sua Hora de Trabalho\n\n")
 		escreva("\nPor favor, informe qual o valor do seu salario mensal: ")
 		leia(salario)
@@ -17,11 +18,10 @@ inclua biblioteca Matematica --> Mat//biblioteca incluida para utilização da f
 		leia(hpdia)
 
 		result = (salario/30)/hpdia
-		
 		limpa()
+		
 		escreva("--------------------------------------RESULTADO-----------------------------------------\n\n")
 		escreva(nome,"! Com base nas suas informações, você ganha R$ ",Mat.arredondar(result, 2)," por hora trabalhada\n\n")
 		escreva("\n----------------------Hora Trabalhada v1.0 por Eúde Brito---------------------------\n")
-
 		}
 }
