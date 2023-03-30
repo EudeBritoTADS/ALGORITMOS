@@ -16,18 +16,19 @@ programa
 		limpa()				
 		escreva("Maravilha! Por fim me diga, em que ano nasceu: ")
 		leia(ano)
-		se(mes<c.mes_atual()){
-		idade=c.ano_atual()-ano-1
-		}
+		
+		se(mes<c.mes_atual())
+			idade=c.ano_atual()-ano-1
+		
 		senao se(mes==c.mes_atual()){
 			se(dia<c.dia_mes_atual())
-		idade=c.ano_atual()-ano-1	
-		senao
-		idade=c.ano_atual()-ano
+				idade=c.ano_atual()-ano-1	
+			senao
+				idade=c.ano_atual()-ano
 		}
-		senao se(mes>c.mes_atual()){
+		senao se(mes>c.mes_atual())
 			idade=c.ano_atual()-ano
-		}
+		
 		limpa()
 		escreva("-----------------RESULTADO---------------------------\n\n")
 		escreva(nome,", você tem ",idade, " anos de idade\n\n")
