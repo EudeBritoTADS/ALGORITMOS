@@ -20,8 +20,8 @@ programa
 		se(mes<c.mes_atual())
 			idade=c.ano_atual()-ano-1
 		
-		senao se(mes==c.mes_atual()){
-			se(dia<c.dia_mes_atual())
+		senao se(mes==c.mes_atual())
+		{	se(dia<c.dia_mes_atual())
 				idade=c.ano_atual()-ano-1	
 			senao
 				idade=c.ano_atual()-ano
