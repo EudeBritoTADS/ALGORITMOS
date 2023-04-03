@@ -43,7 +43,7 @@ programa
 				}
 
 				limpa()
-				escreva("No lado B estão:",item[ladoB[1]],item[ladoB[2]],item[ladoB[3]],item[ladoB[4]],"\n")
+				escreva("No lado (B) estão:",item[ladoB[1]],item[ladoB[2]],item[ladoB[3]],item[ladoB[4]],"\n")
 				escreva("\nDigite o número correspondente ao que você deseja trazer para o lado (A): ")
 				leia(op)
 				ladoB[op]=0
@@ -60,7 +60,7 @@ programa
 					pare
 				}
 				limpa()
-				escreva("Agora no lado A nós temos:", item[1-ladoB[1]],item[2-ladoB[2]],item[3-ladoB[3]],item[4-ladoB[4]], "\n\n")
+				escreva("Agora no lado (A) nós temos:", item[1-ladoB[1]],item[2-ladoB[2]],item[3-ladoB[3]],item[4-ladoB[4]], "\n\n")
 			}	
 		}
 		senao
