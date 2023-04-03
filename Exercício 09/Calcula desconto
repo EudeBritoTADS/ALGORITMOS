@@ -9,15 +9,18 @@ programa
 		
 		escreva("Olá!\nIremos calcular o valor de desconto aplicado aos seus produtos\n")
 		
-		para(cont=1;cont<4;cont++){
-			escreva("\nDigite o preço do produto 0",cont,": ")
+		para(cont=1;cont<4;cont++)
+		{	escreva("\nDigite o preço do produto 0",cont,": ")
 			leia(itens[cont])
 		}
+		
 		cont=1
+		
 		faca {
 			resultado += itens[cont]
 			cont++
 		} enquanto(cont<4)
+		
 		limpa()
 		escreva("------------------Relatório de compras----------------\n\n")
 		escreva("Preço total dos produtos: R$ ",mat.arredondar(resultado, 2))
