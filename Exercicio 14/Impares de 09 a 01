@@ -1,0 +1,13 @@
+programa {
+
+  inteiro numero,total
+  funcao inicio() {
+    
+    para(numero=9;numero>0;numero--)
+    {
+      total=numero--
+      escreva("Número: ",total,"\n")
+    }
+    escreva("\nTotal: ", total)
+  }
+}
