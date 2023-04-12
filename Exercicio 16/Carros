@@ -1,6 +1,6 @@
 programa {
 
-  cadeia carros[10] = {"Volkswagen Santana","Ford Del Rey", "Volkswagen Voyage","Chevrolet Opala", "Volkswagen Fusca", "Chevrolet D20", "Ford F-1000","Volkswagen Gol", "Fiat Uno Mille","Volkswagen Parati"}
+  cadeia carros[] = {"Volkswagen Santana","Ford Del Rey", "Volkswagen Voyage","Chevrolet Opala", "Volkswagen Fusca", "Chevrolet D20", "Ford F-1000","Volkswagen Gol", "Fiat Uno Mille","Volkswagen Parati"}
   
   funcao inicio() 
   {    
